@@ -39,7 +39,7 @@ setup(
     long_description_content_type='text/markdown',
     license='MIT',
 
-    packages=find_packages(SETUP_DIR, exclude=('*test*',)),
+    packages=find_packages(str(SETUP_DIR), exclude=('*test*',)),
     package_dir={'ptflops': str(SETUP_DIR / 'ptflops')},
 
     zip_safe=True,
